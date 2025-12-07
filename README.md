@@ -78,17 +78,28 @@ npm run start
 🧱 Estructura del proyecto
 
 ├── public/               # Contiene index.html (interfaz visual)
+
 │   └── index.html
 
+
 ├── src/
+
 │   ├── app.js            # Punto de entrada de la App
+
 │   ├── controllers/      # Lógica de rutas
+
 │   ├── database/         # Vacía, útil para backup de datos
+
 │   ├── firebase/         # Conexión y configuración de Firebase-Firestore 
+
 │   ├── middlewares/      # Lógica de Autenticación 
+
 │   ├── models/           # Modelo de productos
+
 │   ├── routes/           # Endpoints de productos y auth
+
 │   ├── services/         # Lógica de negocio
+
 
 ├── .env-example          # Variables de entorno de ejemplo
 
