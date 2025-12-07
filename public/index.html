@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Aplicación Express</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <div class="container mx-auto px-4 py-16">
+      <div class="max-w-2xl mx-auto text-center">
+        <h1 class="text-6xl font-bold text-gray-800 mb-6 animate-fade-in">
+          ¡Bienvenido/a a mi API REST!
+        </h1>
+        <br />
+
+        <p class="text-2xl text-gray-600 mb-12">
+          Una aplicación de Node js con Express
+        </p>
+
+        <a href="/products">
+          <button
+            class="bg-green-600 hover:bg-indigo-700 text-white font-semibold py-4 px-10 rounded-lg shadow-xl transform transition hover:scale-105 active:scale-95 text-lg"
+          >
+            Ver Productos →
+          </button>
+        </a>
+        <div class="mt-6">
+          <a href="/auth">
+            <button
+              class="bg-fuchsia-600 hover:bg-orange-500 text-white font-semibold py-4 px-10 rounded-lg shadow-xl transform transition hover:scale-105 active:scale-95 text-lg"
+            >
+              Autenticarse →
+            </button>
+          </a>
+        </div>
+
+        <!-- Sección de rutas -->
+        <div class="mt-12 text-left bg-white shadow-lg rounded-lg p-6">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            📌 Rutas disponibles
+          </h2>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>
+              <strong>GET</strong> /api/products → Devuelve todos los productos
+            </li>
+            <li>
+              <strong>GET</strong> /api/products/:id → Devuelve el producto con
+              el ID indicado
+            </li>
+            <li>
+              <strong>POST</strong> /api/products/create → Crea un nuevo
+              producto
+            </li>
+            <li>
+              <strong>PUT</strong> /api/products/:id → Actualiza el producto con
+              el ID indicado
+            </li>
+
+            <li>
+              <strong>DELETE</strong> /api/products/:id → Elimina el producto
+              con el ID indicado
+            </li>
+            <li>
+              <strong>POST</strong> /auth/login → Autentica usuario y devuelve
+              el Token para utilizar las rutas restringidas de los productos
+              (POST,PUT,DELETE)
+            </li>
+            <li>
+              <strong>GET</strong> /auth/ → Página inicial de autenticación
+            </li>
+            <li>
+              <strong>GET</strong> /auth/login → Página visual "Login en
+              Desarrollo”
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
