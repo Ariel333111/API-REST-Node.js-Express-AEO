@@ -79,6 +79,7 @@ npm run start
 
 ├── public/               # Contiene index.html (interfaz visual)
 │   └── index.html
+
 ├── src/
 │   ├── app.js            # Punto de entrada de la App
 │   ├── controllers/      # Lógica de rutas
@@ -88,9 +89,13 @@ npm run start
 │   ├── models/           # Modelo de productos
 │   ├── routes/           # Endpoints de productos y auth
 │   ├── services/         # Lógica de negocio
+
 ├── .env-example          # Variables de entorno de ejemplo
+
 ├── .gitignore
+
 ├── package.json
+
 ├── package-lock.json
 
 ---
