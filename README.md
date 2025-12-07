@@ -1,7 +1,7 @@
-# 📦 Proyecto Final Talento Tech 2025 - API REST con Node.js y Express - 
+# 📦 Proyecto Final Talento Tech 2025 - API REST con Node.js y Express -
 
 Este proyecto es una **API REST** desarrollada con **Node.js** y **Express**, que permite administrar productos de un catálogo en la nube.  
-Incluye autenticación de credenciales con **JWT**, conexión a **Firestore (Firebase)** y manejo de errores estandarizado. 
+Incluye autenticación de credenciales con **JWT**, conexión a **Firestore (Firebase)** y manejo de errores estandarizado.
 
 Para información adicional ver archivo PDF.
 
@@ -10,7 +10,6 @@ Para información adicional ver archivo PDF.
 🎯 Objetivo del Proyecto
 
 Este proyecto representa el cierre de un ciclo formativo en TechLab y la consolidación de una arquitectura escalable, segura y documentada.
-
 
 ---
 
@@ -27,8 +26,7 @@ Este proyecto representa el cierre de un ciclo formativo en TechLab y la consoli
 - **Autenticación**:
 
   - `POST /auth/login` → Devuelve un Token si las credenciales son válidas
-  - `GET /auth/` → Página inicial de autenticación con botones estilizados en Tailwind CSS
-  - `GET /auth/login` → Página visual en modo dark con aviso “🚧 Vista de Login en Desarrollo”
+  - `GET /auth/` → Página visual con aviso “🚧 Vista de Login en Desarrollo”
 
 - **Manejo de errores**:
 
@@ -40,15 +38,15 @@ Este proyecto representa el cierre de un ciclo formativo en TechLab y la consoli
 
 ## 🛠️ Tecnologías utilizadas
 
-- [Node.js](https://nodejs.org/)  
-- [Express](https://expressjs.com/)  
-- [Firebase Firestore](https://firebase.google.com/docs/firestore)  
-- [JWT (jsonwebtoken)](https://www.npmjs.com/package/jsonwebtoken)  
-- [dotenv](https://www.npmjs.com/package/dotenv)  
-- [cors](https://www.npmjs.com/package/cors)  
-- [bcrypt](https://www.npmjs.com/package/bcrypt)  
-- [HTML](https://developer.mozilla.org/es/docs/Web/HTML)  
-- [Tailwind CSS](https://tailwindcss.com/)  
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [Firebase Firestore](https://firebase.google.com/docs/firestore)
+- [JWT (jsonwebtoken)](https://www.npmjs.com/package/jsonwebtoken)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [cors](https://www.npmjs.com/package/cors)
+- [bcrypt](https://www.npmjs.com/package/bcrypt)
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ---
 
@@ -59,6 +57,8 @@ Este proyecto representa el cierre de un ciclo formativo en TechLab y la consoli
    ```bash
    git clone <url-del-repo>
    cd <nombre-del-proyecto>
+
+   ```
 
 2. Instalar dependencias:
 
@@ -73,35 +73,33 @@ npm install
 
 npm run start
 
-----
+---
 
 🧱 Estructura del proyecto
 
-├── public/               # Contiene index.html (interfaz visual)
+├── public/ # Contiene index.html (interfaz visual)
 
-│   └── index.html
-
+│ └── index.html
 
 ├── src/
 
-│   ├── app.js            # Punto de entrada de la App
+│ ├── app.js # Punto de entrada de la App
 
-│   ├── controllers/      # Lógica de rutas
+│ ├── controllers/ # Lógica de rutas
 
-│   ├── database/         # Vacía, útil para backup de datos
+│ ├── database/ # Vacía, útil para backup de datos
 
-│   ├── firebase/         # Conexión y configuración de Firebase-Firestore 
+│ ├── firebase/ # Conexión y configuración de Firebase-Firestore
 
-│   ├── middlewares/      # Lógica de Autenticación 
+│ ├── middlewares/ # Lógica de Autenticación
 
-│   ├── models/           # Modelo de productos
+│ ├── models/ # Modelo de productos
 
-│   ├── routes/           # Endpoints de productos y auth
+│ ├── routes/ # Endpoints de productos y auth
 
-│   ├── services/         # Lógica de negocio
+│ ├── services/ # Lógica de negocio
 
-
-├── .env-example          # Variables de entorno de ejemplo
+├── .env-example # Variables de entorno de ejemplo
 
 ├── .gitignore
 
@@ -120,6 +118,3 @@ La carpeta public/ contiene el archivo index.html, que incluye:
 - Estilos con Tailwind CSS
 
 ---
-
-
-
